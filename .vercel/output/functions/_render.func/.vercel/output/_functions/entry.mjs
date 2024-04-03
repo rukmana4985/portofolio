@@ -3,7 +3,7 @@ import 'node:http';
 import { TLSSocket } from 'node:tls';
 import { e as appendForwardSlash, j as joinPaths, t as trimSlashes, s as slash, p as prependForwardSlash, r as removeTrailingForwardSlash, f as collapseDuplicateSlashes } from './chunks/astro/assets-service_GxFFKq-7.mjs';
 import { serialize, parse } from 'cookie';
-import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_r_iYo2UV.mjs';
+import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_p-hPQpDH.mjs';
 import 'kleur/colors';
 import { A as AstroError, R as ResponseSentError, q as MiddlewareNoDataOrNextCalled, t as MiddlewareNotAResponse, G as GetStaticPathsRequired, v as InvalidGetStaticPathsReturn, w as InvalidGetStaticPathsEntry, x as GetStaticPathsExpectedParams, y as GetStaticPathsInvalidRouteParam, P as PageNumberParamNotFound, N as NoMatchingStaticPathFound, z as PrerenderDynamicEndpointPathCollide, B as LocalsNotAnObject, C as ASTRO_VERSION, D as ClientAddressNotAvailable, S as StaticClientAddressNotAvailable, H as renderEndpoint, J as ReservedSlotName, K as renderSlotToString, O as renderJSX, Q as chunkToString, T as CantRenderPage, V as renderPage$1 } from './chunks/astro_os_mGpub.mjs';
 import 'clsx';
@@ -1985,13 +1985,13 @@ const createExports = (manifest, { middlewareSecret }) => {
   return { default: handler };
 };
 
-const _page0  = () => import('./chunks/generic_NerKz4kj.mjs');
-const _page1  = () => import('./chunks/index_kll0qbrK.mjs');const pageMap = new Map([["node_modules/astro/dist/assets/endpoint/generic.js", _page0],["src/pages/index.astro", _page1]]);
+const _page0  = () => import('./chunks/generic_z3O2qA8m.mjs');
+const _page1  = () => import('./chunks/index_93aL8cW0.mjs');const pageMap = new Map([["node_modules/astro/dist/assets/endpoint/generic.js", _page0],["src/pages/index.astro", _page1]]);
 const _manifest = Object.assign(manifest, {
 	pageMap,
 	renderers,
 });
-const _args = {"middlewareSecret":"4085553c-c7a6-4ba3-9bb2-3146b670fcdf"};
+const _args = {"middlewareSecret":"172902a4-a044-4af6-a93a-8b4c7363d26e"};
 
 const _exports = createExports(_manifest, _args);
 const _default = _exports['default'];
