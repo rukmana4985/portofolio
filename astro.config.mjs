@@ -8,6 +8,11 @@ import vercel from '@astrojs/vercel/serverless';
 export default defineConfig({
   site: "https://portofolio-5rzpofnxe-rukmana4985s-projects.vercel.app/",
   integrations: [tailwind(), icon()],
-  output: 'server',
+  output: 'hybrid',
   adapter: vercel(),
+  vite: {
+    ssr: {
+      noExternal: 'cookie'
+    }
+  },
 });
