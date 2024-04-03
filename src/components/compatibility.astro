@@ -1,0 +1,91 @@
+---
+import CompatibilityList from "~/components/compatibility-list.astro";
+import ContentSection from "~/components/content-section.astro";
+import type { CompatibilityItem } from "~/types";
+import { Image } from 'astro:assets';
+import img from '../assets/laravel.svg';
+
+const frameworks: Array<CompatibilityItem> = [
+  {
+    title: "Laravel",
+    icon: "fa-brands:laravel",
+    url: "https://laravel.com/",
+  },
+  {
+    title: "Bootstrap",
+    icon: "fa-brands:bootstrap",
+    url: "https://getbootstrap.com/",
+  },
+  {
+    title: "Material",
+    icon: "mdi:material-design",
+    url: "https://m3.material.io/",
+  },
+  {
+    title: "Vue",
+    icon: "frameworks/vue",
+    url: "https://vuejs.org/",
+  },
+  {
+    title: "Javascript",
+    icon: "mdi:language-javascript",
+    url: "https://www.javascript.com/",
+  },
+  {
+    title: "TailwindCss",
+    icon: "mdi:tailwind",
+    url: "https://www.tailwindawesome.com/",
+  },
+];
+
+const platforms: Array<CompatibilityItem> = [
+  {
+    title: "Netlify",
+    icon: "mdi:aws",
+    url: "https://www.netlify.com/",
+  },
+  {
+    title: "Vercel",
+    icon: "platforms/vercel",
+    url: "https://vercel.com/",
+  },
+  {
+    title: "Cloudflare",
+    icon: "fa-brands:cloudflare",
+    url: "https://pages.cloudflare.com/",
+  },
+  {
+    title: "Render",
+    icon: "mdi:gitlab",
+    url: "https://render.com/",
+  },
+  {
+    title: "GitHub",
+    icon: "fa-brands:github",
+    url: "https://pages.github.com/",
+  },
+  {
+    title: "GitLab",
+    icon: "fa-brands:gitlab",
+    url: "https://docs.gitlab.com/ee/user/project/pages/",
+  },
+];
+---
+
+<ContentSection title="The Skills" id="compatibility">
+  <Fragment slot="lead">
+    My Skill as a <span class="text-primary">web developer</span>. Can you see {" "}
+    <span class="text-primary">through</span>
+    the section  <span class="text-primary">below</span>.
+  </Fragment>
+  <CompatibilityList
+    items={frameworks}
+    title="Frameworks"
+    url="https://docs.astro.build/core-concepts/framework-components/"
+  />
+  <CompatibilityList
+    items={platforms}
+    title="Platforms"
+    url="https://docs.astro.build/guides/deploy/"
+  />
+</ContentSection>

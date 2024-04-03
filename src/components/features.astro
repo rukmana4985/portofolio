@@ -1,0 +1,65 @@
+---
+import { Icon } from "astro-icon/components";
+import ContentSection from "~/components/content-section.astro";
+import type { FeatureItem } from "~/types";
+
+const features: Array<FeatureItem> = [
+  {
+    title: "Data Research and Design",
+    description:
+      "Create a web-based application system design, starting with data collection and research.",
+    icon: "mdi:handshake",
+  },
+  {
+    title: "Processing Data Applications",
+    description:
+      "Processing researched data into digital business processes.",
+    icon: "mdi:feather",
+  },
+  {
+    title: "Deploy Data to Application",
+    description:
+      "Writing draft code and database results from data research.",
+    icon: "mdi:directions-fork",
+  },
+  {
+    title: "Testing and Application Security",
+    description:
+      "Trying to create a security feature of an application that has been created with it.",
+    icon: "mdi:graph",
+  },
+  {
+    title: "SEO Implementation",
+    description:
+      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication.",
+    icon: "mdi:search-web",
+  },
+  {
+    title: "Website Application Launch",
+    description:
+      "Launches a developed application that can be used and accessed by Internet users.",
+    icon: "mdi:account-group",
+  },
+];
+---
+
+<ContentSection title="What I Do?" id="features">
+  <Fragment slot="lead">
+    I do work as a  <span class="text-primary">web developer</span>, from designing 
+    <span class="text-primary">web applications</span>
+    to launching web-based <span class="text-primary">applications</span>.
+  </Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      features.map(({ title, description, icon }) => (
+        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6">
+          <div class="size-16 rounded-full border-2 border-current p-3">
+            <Icon name={icon} class="size-full" />
+          </div>
+          <p class="text-center font-extrabold text-xl">{title}</p>
+          <p class="text-center text-offset text-sm">{description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</ContentSection>

@@ -1,0 +1,29 @@
+---
+import { Icon } from "astro-icon/components";
+import ContentSection from "~/components/content-section.astro";
+---
+
+<ContentSection title="Just About Me" id="intro">
+  <Icon slot="eyebrow" name="logomark" class="size-32" />
+  <Fragment slot="lead">
+    Hi! My name is Rukmana/Luqman, I'm a
+    <span class="text-primary">fullstack web developer</span>.
+    Here's my web  <span class="text-primary">portfolio</span>, so enjoy to see my work.
+  </Fragment>
+  <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
+    <a
+      href="https://github.com/rukmana4985"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon name="mdi:telescope" class="size-8" />
+      <span>My Github</span>
+    </a>
+    <a
+      href="https://wa.me/6283169705395"
+      class="flex items-center justify-center gap-3 border-2 border-current px-6 py-4"
+    >
+      <Icon name="mdi:rocket" class="size-8" />
+      <span>Contact Me</span>
+    </a>
+  </div>
+</ContentSection>
